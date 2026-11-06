@@ -5,7 +5,7 @@ English · [Русский](README.md)
 Global instructions for Claude Code: how the agent understands a task, does the minimum needed, verifies the result and writes for people. This is my working file, published almost as is. Only the personal sections are cut out.
 
 ```
-git clone https://github.com/becyb-org/jadlis-claude-md.git
+git clone https://github.com/beCyborg/jadlis-claude-md.git
 sh jadlis-claude-md/install.sh --plan
 sh jadlis-claude-md/install.sh
 ```
@@ -31,7 +31,7 @@ If you already have your own `~/.claude/CLAUDE.md`, the script leaves it alone a
 - **Plan format — only with `/verif`.** The «Change plans» section sets the plan headings that the `/verif` skill parses. Without that skill you can drop the section.
 - **Tied to my plugins.** The «Tool routing» and «Subagents, Workflow» sections and `rules/routing.md` point at Jadlis plugins (`/jadlis-search:search`, `/jadlis-browser:browser`) and at Opus 5.5. Without those plugins you can skip `routing.md`: `install.sh --no-routing`.
 
-The automatic text check after every note write comes from the [jadlis-claudecode](https://github.com/becyb-org/jadlis-claudecode) plugin: it adds the `ste-ru-lint.py` hook when `CLAUDE.md` has a «Writing for people» section.
+The automatic text check after every note write comes from the [jadlis-claudecode](https://github.com/beCyborg/jadlis-claudecode) plugin: it adds the `ste-ru-lint.py` hook when `CLAUDE.md` has a «Writing for people» section.
 
 ## Install
 
@@ -47,8 +47,8 @@ Update: `git -C jadlis-claude-md pull`, then `install.sh --plan` and `install.sh
 
 ## Related
 
-- [jadlis-output-styles](https://github.com/becyb-org/jadlis-output-styles) — the Jadlis and Jadlis Voice answer styles. The instructions in this file refer to them.
-- [jadlis-claudecode](https://github.com/becyb-org/jadlis-claudecode) — a plugin that sets up Claude Code and the terminal: settings, hooks, status line, tmux, `cld`. It can install this repo as one step.
+- [jadlis-output-styles](https://github.com/beCyborg/jadlis-output-styles) — the Jadlis and Jadlis Voice answer styles. The instructions in this file refer to them.
+- [jadlis-claudecode](https://github.com/beCyborg/jadlis-claudecode) — a plugin that sets up Claude Code and the terminal: settings, hooks, status line, tmux, `cld`. It can install this repo as one step.
 
 ## License
 

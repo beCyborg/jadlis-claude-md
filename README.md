@@ -5,7 +5,7 @@
 Глобальные инструкции для Claude Code: как агент понимает задачу, делает минимум нужного, проверяет результат и пишет для людей. Это мой рабочий файл, выложенный почти как есть. Из него вырезаны только личные разделы.
 
 ```
-git clone https://github.com/becyb-org/jadlis-claude-md.git
+git clone https://github.com/beCyborg/jadlis-claude-md.git
 sh jadlis-claude-md/install.sh --plan
 sh jadlis-claude-md/install.sh
 ```
@@ -31,7 +31,7 @@ sh jadlis-claude-md/install.sh
 - **Формат планов — только с `/verif`.** Раздел «Change plans» задаёт заголовки плана, которые разбирает скилл `/verif`. Без него раздел можно убрать.
 - **Под мои плагины.** Разделы «Tool routing», «Subagents, Workflow» и файл `rules/routing.md` ссылаются на плагины Jadlis (`/jadlis-search:search`, `/jadlis-browser:browser`) и на Opus 5.5. Без этих плагинов `routing.md` можно не ставить: `install.sh --no-routing`.
 
-Автоматическую проверку текста после каждой записи заметки включает плагин [jadlis-claudecode](https://github.com/becyb-org/jadlis-claudecode): он добавляет хук `ste-ru-lint.py`, если в `CLAUDE.md` есть раздел «Writing for people».
+Автоматическую проверку текста после каждой записи заметки включает плагин [jadlis-claudecode](https://github.com/beCyborg/jadlis-claudecode): он добавляет хук `ste-ru-lint.py`, если в `CLAUDE.md` есть раздел «Writing for people».
 
 ## Установка
 
@@ -47,8 +47,8 @@ sh jadlis-claude-md/install.sh
 
 ## Что рядом
 
-- [jadlis-output-styles](https://github.com/becyb-org/jadlis-output-styles) — стили ответа Jadlis и Jadlis Voice. Инструкции из этого файла ссылаются на них.
-- [jadlis-claudecode](https://github.com/becyb-org/jadlis-claudecode) — плагин, который собирает Claude Code и терминал: настройки, хуки, строка состояния, tmux, `cld`. Он может поставить этот репо одним шагом.
+- [jadlis-output-styles](https://github.com/beCyborg/jadlis-output-styles) — стили ответа Jadlis и Jadlis Voice. Инструкции из этого файла ссылаются на них.
+- [jadlis-claudecode](https://github.com/beCyborg/jadlis-claudecode) — плагин, который собирает Claude Code и терминал: настройки, хуки, строка состояния, tmux, `cld`. Он может поставить этот репо одним шагом.
 
 ## Лицензия
 
